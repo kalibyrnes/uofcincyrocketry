@@ -15,10 +15,11 @@
     gap: 15px;           /* space between logo and text */
 }
 
-/* Logo sizing */
-.logo-title .logo {
-    height: 50px; /* adjust to fit nicely */
-    width: auto;  /* preserve aspect ratio */
+/* Force logo size */
+.logo-title img.logo {
+    height: 50px !important;
+    width: auto !important;
+    max-height: 50px;
 }
 
 /* Site title styling */
