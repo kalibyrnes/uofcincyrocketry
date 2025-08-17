@@ -1,28 +1,30 @@
-/* Header container: logo+title on left, nav on right */
+/* Main header container: logo/title left, nav right */
 .header-container {
     display: flex;
-    align-items: center;   /* vertically center items */
-    justify-content: space-between;  /* logo/title left, nav right */
+    align-items: center;         /* vertical alignment */
+    justify-content: space-between; /* left/right spacing */
     padding: 10px 20px;
-}
-
-/* Logo + title group */
-.logo-title {
-    display: flex;
-    align-items: center;   /* vertically center logo with title */
-    gap: 15px;
-}
-
-/* Logo size */
-.logo-title .logo {
-    height: 70px; /* adjust as needed */
-    width: auto;
-}
-
-/* Header background and text */
-header {
     background-color: #333;
     color: white;
+}
+
+/* Logo and title grouped together */
+.logo-title {
+    display: flex;
+    align-items: center; /* vertical alignment of logo & title */
+    gap: 15px;           /* space between logo and text */
+}
+
+/* Logo sizing */
+.logo-title .logo {
+    height: 50px; /* adjust to fit nicely */
+    width: auto;  /* preserve aspect ratio */
+}
+
+/* Site title styling */
+.logo-title h1 {
+    font-size: 1.5em; /* adjust as needed */
+    margin: 0;
 }
 
 /* Navigation styling */
@@ -35,6 +37,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
 }
 
 nav a:hover {
