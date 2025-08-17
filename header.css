@@ -1,0 +1,38 @@
+/* Header container: logo + site title */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* aligns logo and title to left */
+    gap: 15px; /* space between logo and title */
+    padding: 10px 20px;
+}
+
+/* Logo size */
+.header-container .logo {
+    height: 50px; /* adjust logo height */
+    width: auto;
+}
+
+/* Header background and text */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Navigation bar styling */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
