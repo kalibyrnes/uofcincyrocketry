@@ -1,15 +1,21 @@
-/* Header container: logo + site title */
+/* Header container: logo+title on left, nav on right */
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* aligns logo and title to left */
-    gap: 15px; /* space between logo and title */
+    align-items: center;   /* vertically center items */
+    justify-content: space-between;  /* logo/title left, nav right */
     padding: 10px 20px;
 }
 
+/* Logo + title group */
+.logo-title {
+    display: flex;
+    align-items: center;   /* vertically center logo with title */
+    gap: 15px;
+}
+
 /* Logo size */
-.header-container .logo {
-    height: 70px; /* adjust logo height */
+.logo-title .logo {
+    height: 50px; /* adjust as needed */
     width: auto;
 }
 
@@ -17,18 +23,16 @@
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
 }
 
-/* Navigation bar styling */
+/* Navigation styling */
 nav {
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    gap: 15px; /* space between tabs */
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
