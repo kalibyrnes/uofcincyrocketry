@@ -1,46 +1,46 @@
-/* Main header container: logo/title left, nav right */
-.header-container {
-    display: flex;
-    align-items: center;         /* vertical alignment */
-    justify-content: space-between; /* left/right spacing */
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+/* Header container */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
 }
 
-/* Logo and title grouped together */
+/* Logo + title side */
 .logo-title {
-    display: flex;
-    align-items: center; /* vertical alignment of logo & title */
-    gap: 15px;           /* space between logo and text */
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/* Force logo size */
-.logo-title img.logo {
-    height: 50px !important;
-    width: auto !important;
-    max-height: 50px;
+/* FIXED logo sizing */
+.logo {
+  max-height: 60px;   /* never taller than 60px */
+  width: auto;        /* scale width automatically */
+  height: auto;       /* scale height automatically */
+  object-fit: contain;
 }
 
-/* Site title styling */
+/* Title text */
 .logo-title h1 {
-    font-size: 1.5em; /* adjust as needed */
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
+  white-space: nowrap;
 }
 
-/* Navigation styling */
-nav {
-    display: flex;
-    gap: 15px; /* space between tabs */
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-nav a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
