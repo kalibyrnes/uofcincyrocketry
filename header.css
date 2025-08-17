@@ -17,7 +17,7 @@ header {
 
 /* FIXED logo sizing */
 .logo {
-  max-height: 10px;   /* never taller than 60px */
+  max-height: 60px;   /* never taller than 60px */
   width: auto;        /* scale width automatically */
   height: auto;   /* scale height automatically */
   object-fit: contain;
